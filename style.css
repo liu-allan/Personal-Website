@@ -1,0 +1,153 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  padding: 5vw;
+}
+
+h1 {
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3{
+  font-style: italic;
+  font-size: -5vw;
+  visibility: hidden;
+}
+
+h4{
+  text-align: center;
+  font-style: italic;
+  font-size: 6vw;
+}
+
+
+p {
+  text-align: center;
+  font-size: 1vw;
+}
+
+a.blackActive:active {
+  color: black;
+}
+
+a:active{
+  text-decoration: none;
+  color:#BBBBBB;
+}
+a:hover{
+  text-decoration: none;
+  color:#BBBBBB;
+}
+
+a:link{
+  text-decoration: none;
+  color:#BBBBBB;
+}
+
+a:visited{
+  text-decoration: none;
+  color:black;
+}
+
+img{
+  display: flex;
+  padding: 1vw;
+}
+
+div.title{
+  
+}
+
+@media screen and (min-width: 601px) {
+  div.title {
+    font-size: 1vw;
+    margin-bottom: 0.2vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.title {
+    font-size: 25px;
+    margin-bottom: 5vw;
+  }
+}
+
+div.text{
+  text-align:center; 
+  color:#BBBBBB;
+}
+
+@media screen and (min-width: 601px) {
+  div.text {
+    font-size: 0.8vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.text {
+    font-size: 15px;
+    margin-top: 2vw;
+  }
+}
+
+
+
+
+
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 12px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.column video {
+  margin-top: 12px;
+  vertical-align: middle;
+  width: 100%;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 96vw;
+    margin-left: auto;
+    margin-right:auto;
+  }
+}
+

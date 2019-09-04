@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>- Allan Liu -</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <style>
+      #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      #myImg:hover {opacity: 0.8;}
+
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+      }
+
+      /* Modal Content (image) */
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+
+      /* Caption of Modal Image */
+      #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+      }
+
+      /* Add Animation */
+      .modal-content, #caption {  
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.3s;
+        animation-name: zoom;
+        animation-duration: 0.3s;
+      }
+
+      @-webkit-keyframes zoom {
+        from {-webkit-transform: scale(0)} 
+        to {-webkit-transform: scale(1)}
+      }
+
+      @keyframes zoom {
+        from {transform: scale(0.1)} 
+        to {transform: scale(1)}
+      }
+
+      /* The Close Button */
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      /* 100% Image Width on Smaller Screens */
+      @media only screen and (max-width: 700px){
+        .modal-content {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>  
+  
+  <h1>
+    <br>
+  </h1>
+  
+  <body>
+    
+    <img src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2FIMG_20190731_201047_110.jpg?v=1564618729029" class="img-circle" width = "125" height = "auto" style="margin-left:auto; margin-right:auto"  >
+    
+    <br>
+    
+    <div class="title" style="text-align:center;font-weight:bold">
+      Allan Liu
+    </div>
+    
+    <div class="text" style="text-align:center; color:#BBBBBB;">
+      Click any image to zoom 
+    </div>
+    
+    <br><br>
+    
+    <div class="text" style="text-align:center;">
+      <a class="blackActive" style="text-decoration:none;padding-left: 3vw;padding-right: 3vw; color:#BBBBBB" href="index.html">About</a><a style="padding-left: 3vw;padding-right: 3vw; text-decoration:none; color:#BBBBBB;" href="navigation.html">Navigation</a>
+    </div>
+    
+    <br><br>
+    
+     <div class="row">
+      
+      <div class="column">
+        <img class="myImages" id="myImg" alt="Childish Gambino <br> Favorite Song: Feels Like Summer" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190717141611_IMG_0251.JPG?v=1566482707708" style="width:100%">
+        <img class="myImages" id="myImg" alt="Tyler the Creator <br> Favorite Song: 911/Mr. Lonely" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190717141558_IMG_0250.JPG?v=1566483169855" style="width:100%">
+        <img class="myImages" id="myImg" alt="MF DOOM <br> Favorite Song: That's That" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190821_222708.jpg?v=1566482630037" style="width:100%">
+      </div>
+      
+      <div class="column">
+        <img class="myImages" id="myImg" alt="Mac DeMarco <br> Favorite Song: Chamber of Reflection" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2FIMG_1112%20(4).JPG?v=1567358304754" style="width:100%">
+        <img class="myImages" id="myImg" alt="Michael Jackson <br> Favorite Song: Rock With You" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2FIMG_1118%20(2).JPG?v=1567396694634" style="width:100%">
+      </div>
+      
+      <div class="column">
+        <img class="myImages" id="myImg" alt="Cowboy Bebop" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190717141629_IMG_0252.JPG?v=1566482700433" style="width:100%">
+        <img class="myImages" id="myImg" alt="Tatami Galaxy" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190821_222955.jpg?v=1566482680723" style="width:100%">
+        <img class="myImages" id="myImg" alt="Cross Game" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2FIMG_1113%20(3).JPG?v=1567358525569" style="width:100%">
+      </div>
+      
+      <div class="column">
+        <img class="myImages" id="myImg" alt="Hajime no Ippo" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190821_222651.jpg?v=1566482679951" style="width:100%">
+        <img class="myImages" id="myImg" alt="Akira" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190717141807_IMG_0258.JPG?v=1566483464397" style="width:100%">       
+      </div>
+      
+    </div>
+    
+    <br>
+    
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+    
+  </body>
+  
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>- Allan Liu -</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <style>
+      #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      #myImg:hover {opacity: 0.8;}
+
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+      }
+
+      /* Modal Content (image) */
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+
+      /* Caption of Modal Image */
+      #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+      }
+
+      /* Add Animation */
+      .modal-content, #caption {  
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.3s;
+        animation-name: zoom;
+        animation-duration: 0.3s;
+      }
+
+      @-webkit-keyframes zoom {
+        from {-webkit-transform: scale(0)} 
+        to {-webkit-transform: scale(1)}
+      }
+
+      @keyframes zoom {
+        from {transform: scale(0.1)} 
+        to {transform: scale(1)}
+      }
+
+      /* The Close Button */
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      /* 100% Image Width on Smaller Screens */
+      @media only screen and (max-width: 700px){
+        .modal-content {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>  
+  
+  <h1>
+    <br>
+  </h1>
+  
+  <body>
+    
+    <img src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2FIMG_20190731_201047_110.jpg?v=1564618729029" class="img-circle" width = "125" height = "auto" style="margin-left:auto; margin-right:auto">
+    
+    <br>
+    
+    <div class="title" style="text-align:center;font-weight:bold">
+      Allan Liu
+    </div>
+    
+    <div class="text" style="text-align:center; color:#BBBBBB;">
+      Click any image to zoom
+    </div>
+    
+    <br><br>
+    
+    <div class="text" style="text-align:center;">
+      
+      <a class="blackActive" style="text-decoration:none;padding-left: 3vw;padding-right: 3vw; color:#BBBBBB" href="index.html">About</a><a style="padding-left: 3vw;padding-right: 3vw; text-decoration:none; color:#BBBBBB;" href="navigation.html">Navigation</a> 
+
+    </div>
+    
+    <br><br>
+    
+    <div class="row">
+      
+      <div class="column">
+        <img class="myImages" id="myImg4" alt="@ CN Tower (1)" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2FIMG_1096.JPG?v=1567098541591" style="width:100%">
+        <img class="myImages" id="myImg4" alt="@ CN Tower (2)" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2FIMG_1092.JPG?v=1567098639205" style="width:100%">
+        <img class="myImages" id="myImg4" alt="@ CN Tower (3)" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2FIMG_1079.JPG?v=1567098690370" style="width:100%">
+        <img class="myImages" id="myImg0" alt="Waterfront (1)" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190824151406_IMG_0820.JPG?v=1566780019787" style="width:100%">
+        <img class="myImages" id="myImg1" alt="Waterfront (2)" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190824143126_IMG_0746.JPG?v=1566780002804" style="width:100%">
+        <img class="myImages" id="myImg2" alt="Waterfront (3)" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190824_224716.jpg?v=1566779979789" style="width:100%">
+        <img class="myImages" id="myImg3" alt="Waterfront (4)" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190824_223652.jpg?v=1566779984010"style="width:100%">
+        <img class="myImages" id="myImg4" alt="Waterfront (5)" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190824_191338.jpg?v=1566779987774" style="width:100%">
+        <img class="myImages" id="myImg2" alt="Waterfront (6)" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190819184827_IMG_0262.JPG?v=1566478986014" style="width:100%">
+      </div>
+      
+      <div class="column">
+        <img class="myImages" id="myImg4" alt="Queen St West" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2FIMG_0148.JPG?v=1565748433206"style="width:100%">
+        <img class="myImages" id="myImg0" alt="Bay @ College" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190812_190834.jpg?v=1565747716983"style="width:100%">
+        <img class="myImages" id="myImg1" alt="Yonge & Dundas Square" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190821_221413.jpg?v=1566478983341" style="width:100%">
+        <img class="myImages" id="myImg3" alt="Ossington @ Dundas" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190813_212717.jpg?v=1565747532778"style="width:100%">
+        <img class="myImages" id="myImg4" alt="Bay @ Gerrard" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190712230719_IMG_0091_1.JPG?v=1566782514032"style="width:100%">
+        <img class="myImages" id="myImg4" alt="Bay @ Harbour" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2FIMG_0831.JPG?v=1567300184424" style="width:100%">
+        <img class="myImages" id="myImg7" alt="CN Tower" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190813_214255%20(1).jpg?v=1566781756439" style="width:100%">
+      </div>
+      
+      <div class="column">
+        <img class="myImages" id="myImg5" alt="Nathan Philips Square (1)" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190813_214003.jpg?v=1565747492712" style="width:100%">
+        <img class="myImages" id="myImg6" alt="Nathan Philips Square (2)" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2FIMG_0177.jpg?v=1565748430204" style="width:100%">
+        <img class="myImages" id="myImg6" alt="Nathan Philips Square (3)" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190824_223112.jpg?v=1566781142457" style="width:100%">
+        <img class="myImages" id="myImg10" alt="Raptors Parade (1)" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190617_161414.jpg?v=1560804767845" style="width:100%">
+        <img class="myImages" id="myImg11" alt="Raptors Parade (2)" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190617_214404.jpg?v=1560822349665" style="width:100%">
+        <img class="myImages" id="myImg17" alt="Kim's Convenience Queen St East" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190609_142038.jpg?v=1560692336799" style="width:100%">
+        <img class="myImages" id="myImg15" alt="Behind TNT Supermarket" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190105_160929.jpg?v=1560692722376" style="width:100%">
+      </div>
+      
+      <div class="column">
+        <img class="myImages" id="myImg12" alt="Adam - Rodin @ AGO (1)" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190821191553_IMG_0708%20(2).jpg?v=1566487985699" style="width:100%">
+        <img class="myImages" id="myImg13" alt="(?) @ AGO (2)" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190821191108_IMG_0701.JPG?v=1566478984900" style="width:100%">
+        <img class="myImages" id="myImg14" alt="The Thinker - Rodin @ AGO (3)" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190821192033_IMG_0713.JPG?v=1566781153531" style="width:100%">
+        <img class="myImages" id="myImg15" alt="Shapeshifter - Brian Jungen @ AGO (4)" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190821183958_IMG_0684.JPG?v=1566781159529" style="width:100%">
+        <img class="myImages" id="myImg8" alt="Tame Impala (1)" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190726_230449.jpg?v=1564612810113"style="width:100%">                                                             
+        <img class="myImages" id="myImg9" alt="Tame Impala (2)" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190727_225138.jpg?v=1564612810337" style="width:100%">
+        <img class="myImages" id="myImg8" alt="Gooderham Building" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190615_212355.jpg?v=1560691440276" style="width:100%">
+        <img class="myImages" id="myImg8" alt="Condo @ Church Street" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20190725_195812.jpg?v=1564613024181" style="width:100%">
+      </div>
+      
+      
+    </div>
+    
+
+    <br>
+    
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+    
+  </body>
+</html>

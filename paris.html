@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>- Allan Liu -</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="script.js"></script>
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <style>
+      #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      #myImg:hover {opacity: 0.8;}
+
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+      }
+
+      /* Modal Content (image) */
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+
+      /* Caption of Modal Image */
+      #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+      }
+
+      /* Add Animation */
+      .modal-content, #caption {  
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.3s;
+        animation-name: zoom;
+        animation-duration: 0.3s;
+      }
+
+      @-webkit-keyframes zoom {
+        from {-webkit-transform: scale(0)} 
+        to {-webkit-transform: scale(1)}
+      }
+
+      @keyframes zoom {
+        from {transform: scale(0.1)} 
+        to {transform: scale(1)}
+      }
+
+      /* The Close Button */
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      /* 100% Image Width on Smaller Screens */
+      @media only screen and (max-width: 700px){
+        .modal-content {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>  
+  
+  <h1>
+    <br>
+  </h1>
+  
+  <body>
+    
+    <img src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2FIMG_20190731_201047_110.jpg?v=1564618729029" class="img-circle" width = "125" height = "125" style="margin-left:auto; margin-right:auto" >
+    
+    <br>
+    
+    <div class="title" style="text-align:center;font-weight:bold">
+      Allan Liu
+    </div>
+    
+    <div class="text" style="text-align:center; color:#BBBBBB;">
+      Click any image to zoom
+    </div>
+    
+    <br><br>
+    
+    <div class="text" style="text-align:center;">  
+      <a class="blackActive" style="text-decoration:none;padding-left: 3vw;padding-right: 3vw; color:#BBBBBB" href="index.html">About</a><a style="padding-left: 3vw;padding-right: 3vw; text-decoration:none; color:#BBBBBB;" href="navigation.html">Navigation</a>
+    </div>
+    
+    <br><br>
+    
+     <div class="row">
+      
+      <div class="column">
+        <img class="myImages" id="myImg" alt="Outside The Louvre" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20180812_151508.jpg?v=1560692959049" style="width:100%">
+        <img class="myImages" id="myImg" alt="Outside a pharmacy" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20180811_180330.jpg?v=1560693009680" style="width:100%">
+        <img class="myImages" id="myImg" alt="Nike of Samothrace @ The Louvre" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20180809_105419.jpg?v=1560693725206" style="width:100%">
+        <img class="myImages" id="myImg" alt="Golden gates @ Palace of Versailles" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20180810_233217.jpg?v=1560693395723" style="width:100%">
+        <img class="myImages" id="myImg" alt="The Eiffel Tower" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20180808_153708%20(1).jpg?v=1560696463480" style="width:100%">
+      </div>
+      
+      <div class="column">
+        <img class="myImages" id="myImg" alt="(?) - Rodin @ the Rodin Museum" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20180811_134950.jpg?v=1560693058538" style="width:100%">
+        <img class="myImages" id="myImg" alt="The Thinker - Rodin @ the Rodin Museum<br>Fun Fact: This Thinker is part of a larger sculpture known as the Gates of Hell" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20180811_155812.jpg?v=1560693037276" style="width:100%">
+        <img class="myImages" id="myImg" alt="(?) @ Musee d'Orsay" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20180812_132654.jpg?v=1560692948130" style="width:100%">
+        <img class="myImages" id="myImg" alt="Throne - Kohei Nawa @ The Louvre" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20180810_232320.jpg?v=1560693584450" style="width:100%">
+        <img class="myImages" id="myImg" alt="Pont Alexander III" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20180808_183611.jpg?v=1560693892925" style="width:100%">
+      </div>
+      
+      <div class="column">
+        <img class="myImages" id="myImg" alt="Eiffel Tower from on top of the Arc de Triomphe" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20180810_235235.jpg?v=1560693124314" style="width:100%">
+        <img class="myImages" id="myImg" alt="Arc de Triomphe" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20180810_211513.jpg?v=1560693163684" style="width:100%">
+        <img class="myImages" id="myImg" alt="(?)" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20180808_150542.jpg?v=1560693960869" style="width:100%">
+        <img class="myImages" id="myImg" alt="The Rape of Persephone by Hades - (?) @ Palace of Versailles" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20180810_232419.jpg?v=1560693247926" style="width:100%">
+        <img class="myImages" id="myImg" alt="(?)" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20180808_183914.jpg?v=1560696648321" style="width:100%">
+      </div>
+      
+      <div class="column">
+        <img class="myImages" id="myImg" alt="One of many fountains @ Palace of Versailles" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20180810_233033.jpg?v=1560693215347" style="width:100%">
+        <img class="myImages" id="myImg" alt="Inside the gardens @ Palace of Versailles" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20180810_153935.jpg?v=1560693262891" style="width:100%">
+        <img class="myImages" id="myImg" alt="Venus de Milo - Alexandros of Antioch @ The Louvre" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20180809_123920.jpg?v=1560693535053" style="width:100%">
+        <img class="myImages" id="myImg" alt="Notre Dame" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20180809_163901.jpg?v=1560693840210" style="width:100%">
+        <img class="myImages" id="myImg" alt="Streets around the Eiffel Tower" src="https://cdn.glitch.com/5a152f9f-365d-4861-a1d8-c98d2d567a1c%2F20180808_170815%20(1).jpg?v=1560696530649" style="width:100%">
+      </div>
+      
+    </div>
+    
+    <br>
+    
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+    
+  </body>
+  
+</html>
